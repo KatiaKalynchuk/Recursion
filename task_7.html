@@ -6,19 +6,18 @@
 </head>
 <body>
 	<script>
-	function f(n) {
-  		if (n===0) {
-    		return true;
-  		}
-		 if (n===1) {
-		    return false;
-		  } else {
-    		n -= 2;
-    		return f(n);
-  			}
-	};
-console.log(f(4));
-console.log(f(11));
+		function isEven(n) {
+			if (n === 0) {
+				return true;
+			} else if (n === 1) {
+				return false;
+			} else {
+				n -= 2;
+				return isEven(n);
+			};
+		};
+		console.log(isEven(4));
+		console.log(isEven(11));
 	</script>
 </body>
 </html>
